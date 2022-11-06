@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { PostCard } from "./allPost"
-// import url from "../../url"
+import url from "../../url"
 import styled from "styled-components"
 
 const HashTag = styled.h1`
@@ -17,7 +17,7 @@ export function SearchPost() {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:8000/blogs?search=${param.search}`)
+        fetch(url.localhost + `/blogs?search=${param.search}`)
             .then((response) => {
                 return response.json()
             })

@@ -2,6 +2,7 @@ import styled from "styled-components"
 // import { Card } from "../ui/card"
 import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
+import url from "../../url"
 
 const SinglePost = styled.div`
     display: block;
@@ -51,7 +52,7 @@ export function Post() {
     const [owner, setOwner] = useState([])
     const [tags, setTags] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:8000/blogs/${param.id}`)
+        fetch(url.localhost + `/blogs/${param.id}`)
             .then((response) => {
                 return response.json()
             })
