@@ -1,6 +1,6 @@
 .Auth {
   background-color: #2e2d3f;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -83,6 +83,7 @@ input:focus {
   width: 100%;
   color: white;
   font-size: inherit;
+  cursor: pointer;
   border: none;
   padding-block: 1rem;
   border-radius: 0.5rem;
