@@ -3,24 +3,11 @@ import google from "../assets/google.webp";
 import facebook from "../assets/facebook1.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-const SignUp = () => {
+const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [firstname, setFirstName] = useState("");
-  const [lastname, setLastName] = useState("");
-  const [username, setUserName] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
 
-  const dataValidation = (e) => {
-    e.preventDefault();
-    if (password !== confirmPassword) {
-      alert("password are not the sane");
-      return false;
-    }
-  };
   const submitFormHandler = (e) => {
-    dataValidation(e);
-
     console.log(
       "Registeration successfull, i'll add navigate hook here to navigate to login page like dat"
     );
@@ -47,41 +34,13 @@ const SignUp = () => {
               <div className={classes.FormHead}>
                 <h3 className={classes.FormTitle}>Sign up</h3>
                 <p className={[classes.Text, classes.Normal].join(" ")}>
-                  Have an account ?{" "}
-                  <Link to="/sign-in" className={classes.Link}>
-                    Sign in
+                  Don't have an accout ?{" "}
+                  <Link to="/sign-up" className={classes.Link}>
+                    Sign Up
                   </Link>
                 </p>
               </div>
               <div className={classes.Inputs}>
-                <input
-                  required
-                  type="text"
-                  value={firstname}
-                  onChange={(e) => {
-                    setFirstName(e.target.value);
-                  }}
-                  placeholder="First Name"
-                />
-                <input
-                  required
-                  type="text"
-                  value={lastname}
-                  onChange={(e) => {
-                    setLastName(e.target.value);
-                  }}
-                  placeholder="Last Name"
-                />
-                <input
-                  required
-                  type="text"
-                  value={username}
-                  onChange={(e) => {
-                    setUserName(e.target.value);
-                  }}
-                  placeholder="Username"
-                />
-
                 <input
                   required
                   type="email"
@@ -100,15 +59,6 @@ const SignUp = () => {
                   }}
                   placeholder="Password"
                 />
-                <input
-                  required
-                  type="password"
-                  value={confirmPassword}
-                  onChange={(e) => {
-                    setConfirmPassword(e.target.value);
-                  }}
-                  placeholder="Confirm password"
-                />
               </div>
               <p>
                 <Link className={classes.Link} to="/forgot-password">
@@ -117,7 +67,7 @@ const SignUp = () => {
               </p>
 
               <button className={classes.Button} type="submit">
-                Sign up{" "}
+                Sign In
               </button>
             </form>
             <p className={classes.Break}>or</p>
@@ -142,4 +92,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;
