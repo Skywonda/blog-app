@@ -42,6 +42,7 @@ const SignIn = () => {
               </div>
               <div className={classes.Inputs}>
                 <input
+                  className={classes.Input}
                   required
                   type="email"
                   value={email}
@@ -51,6 +52,7 @@ const SignIn = () => {
                   placeholder="Email address"
                 />
                 <input
+                  className={classes.Input}
                   required
                   type="password"
                   value={password}

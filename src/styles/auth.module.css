@@ -63,11 +63,7 @@ a {
 .Inputs {
   margin-top: 2rem;
 }
-<<<<<<< HEAD
-input {
-=======
 .Input {
->>>>>>> 1c70096890c85eaaca80a1a4d95f56ee4f9df65c
   background-color: #14141e !important;
   display: block;
   font-size: 1.4rem;
@@ -79,11 +75,7 @@ input {
   margin-top: 2rem;
   color: white;
 }
-<<<<<<< HEAD
-input:focus {
-=======
 .Input:focus {
->>>>>>> 1c70096890c85eaaca80a1a4d95f56ee4f9df65c
   background-color: #14141e !important;
   outline: none;
 }
