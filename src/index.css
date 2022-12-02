@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin: 0;
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,4 +46,10 @@ ul {
 }
 .active::after {
   width: 50%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
 }
