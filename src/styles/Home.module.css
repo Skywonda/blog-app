@@ -119,3 +119,35 @@
   border: 0px;
   outline: none;
 }
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PaginateButtons {
+  width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.PaginateButtons button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(78, 77, 77);
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.PaginateButtons button:hover {
+  background-color: #2930e3;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.PaginateButtons div {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}

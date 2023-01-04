@@ -1,6 +1,5 @@
 import React from "react";
-import classes from "../styles/Home.module.css";
-import { Link } from "react-router-dom";
+import PaginationButtons from "../components/ui/paginationButtons";
 import Articles from "../components/ui/articles/articles";
 import HomeContent from "../components/ui/HomeContentMain";
 const Home = () => {
@@ -8,6 +7,7 @@ const Home = () => {
     <div>
       <HomeContent />
       <Articles />
+      <PaginationButtons />
     </div>
   );
 };

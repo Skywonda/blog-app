@@ -156,3 +156,8 @@
   border-radius: 4px;
   background-color: #2930e3;
 }
+@media only screen and (max-width: 1860px) {
+  .Update {
+    min-width: 60.1rem;
+  }
+}
